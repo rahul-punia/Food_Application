@@ -1,0 +1,25 @@
+.plan-child
+    .plan-header
+        h3 #{plan.name}
+        h3
+            span.styling-span #{plan.price}$
+            | /month
+        p That's only #{Math.ceil(plan.price/plan.duration)}$ per meals.
+    .plan-feature
+        p
+            i.fas.fa-check.feature-icon
+            |  1 meal every day
+        p
+            i.fas.fa-check.feature-icon
+            |  Order 24/7
+        p
+            i.fas.fa-check.feature-icon
+            |  Access to new creations 
+        p
+            i.fas.fa-check.feature-icon
+            |  #{plan.ratingsAverage}/10
+    .plan-btn-container
+        if name
+          a.btn-full.btn(href="javascript:;",plan-id=`${plan["_id"]}`).payment I'm hungry
+        else
+          a.btn-full.btn(href="/login") I'm hungry
