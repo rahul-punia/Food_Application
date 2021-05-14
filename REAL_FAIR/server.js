@@ -6,7 +6,6 @@ const planRouter = require("./router/planRouter");
 const viewRouter=require("./router/viewRouter");
 const reviewRouter=require("./router/reviewRouter");
 const bookingRouter=require("./router/bookingRouter");
-//https://foodapplications.herokuapp.com/
 const socket=app.connect("https://foodapplications.herokuapp.com/");
 
 const path=require("path");
