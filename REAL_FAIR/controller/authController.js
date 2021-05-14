@@ -58,6 +58,10 @@ async function login(req,res){
      });
     }
 }
+//The "throw" keyword is used to throw an exception.
+// The throw keyword is mainly used to throw custom exception. We will see custom exceptions later.
+//The "throws" keyword is used to declare exceptions. 
+//It doesn't throw an exception. It specifies that there may occur an exception in the method. It is always used with method signature.
 
 //protect route useful for authorization
 //token verify
